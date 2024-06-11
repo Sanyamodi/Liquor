@@ -2,14 +2,12 @@ const mongoose = require("mongoose");
 const dbgr = require("debug")("development:mongoose");
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb://127.0.0.1:27017/Liquor")
   .then(function () {
-    dbgr("connected to Mongo");
+    dbgr("connected to MongoDB");
   })
   .catch(function (err) {
     dbgr(err);
   });
 
-let db = mongoose.connection;
-
-module.exports = db;
+module.exports = mongoose.connection;
