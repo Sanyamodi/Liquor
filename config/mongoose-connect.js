@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 const dbgr = require("debug")("development:mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/Liquor")
+  .connect(process.env.MONGO_URI)
   .then(function () {
     dbgr("connected to MongoDB");
+    // $env:DEBUG="development:*" (ye likh ke check karege...)
   })
   .catch(function (err) {
     dbgr(err);

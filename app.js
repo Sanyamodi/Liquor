@@ -3,11 +3,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const cookieParser = require('cookie-parser');
-// const { connection } = require('mongoose');
+const { connection } = require('mongoose');
 const db = require("./config/mongoose-connect");
-const userRouter = ("./routes/userRouter");
-const ownerRouter = ("./routes/ownerRouter");
-const productRouter = ("./routes/productRouter");
+const userRouter = require("./routes/userRouter");
+const ownerRouter = require("./routes/ownerRouter");
+const productRouter = require("./routes/productRouter");
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
