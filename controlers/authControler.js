@@ -42,3 +42,8 @@ module.exports.loginUser = async (req,res) => {
             return res.send("invalid email or password")}
     });
 }
+
+module.exports.logout = (req,res) => {
+    res.clearCookie("token");
+    res.send("logout successfully");
+}

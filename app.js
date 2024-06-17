@@ -11,6 +11,7 @@ const db = require("./config/mongoose-connect");
 const userRouter = require("./routes/userRouter");
 const ownerRouter = require("./routes/ownerRouter");
 const productRouter = require("./routes/productRouter");
+const index = require("./routes/index");
 
 app.use(flash());
 app.set("view engine", "ejs");
@@ -24,6 +25,7 @@ app.use(session({
     secret:process.env.EXPRESS_SESSION_SECRET_KEY,
 }))
 
+app.use("/index",index);
 app.use("/owner",ownerRouter);
 app.use("/user",userRouter);
 app.use("/product",productRouter);
