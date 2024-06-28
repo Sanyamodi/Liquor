@@ -1,0 +1,107 @@
+1.  What is the value of x after the execution of the following pseudo code ?			
+        x = 10;	
+        for i = 1 to 3
+            x = x – i;
+        end for 
+a)4		    b)7		    c)10		    d)6                 (4)
+
+2. What is the value of tip after executing the following code anippet ?
+        int meal = 5;
+        int tip = 2;
+        int total = meal + (meal > 6 ? ++tip: --tip);
+a)1         b)2         c)3             d)6
+
+3. Which of the following create an empty two dimentional array with dimention 2x2 ?
+    a) int[][] arr = new int[2,2];
+    b) int[][] arr = new int[2],[2];
+    c) int[][] arr = new int[2][2];
+    d) int[][] arr = new int[2x2];
+
+4. What does the following coding output ?
+        int running = 0;
+        while(running)
+        System.out.println(running++);
+    a) 0
+    b) The code does not compile.
+    c) The loops complete with no output.
+    d) This is an infinite loop.
+
+5. What is the result of the following code?
+        do{
+            int count = 0;
+            do{
+                count++;
+            }while (count < 2);
+            break;
+        }while(true);
+        System.out.println(count);
+    a) 2
+    b) 3
+    c) The code does not compile
+    d) The code is an infinite loop.
+
+6. What is the output of the following application ? 
+        public class plan{
+            public static void main(String[] args){
+                int plan = 1;
+                plan = plan++ + --plan;
+                if(plan==1) System.out.print("Plan A")
+                else if(plan==2) System.out.print("Plan B")
+                else System.out.print("Plan C");
+            }
+        }
+    a) Plan A       b) Plan B       c)Plan C        d) None of the above        (plan B)
+
+7. what is the output of the following code ?
+        float a = 2;
+        a = a + 2.5;
+        System.out.println(a);
+    a) 2.5      b) 4.5      c) Does not compile         d) 4
+
+8. Given the following code snippet , what is the value of dinner after it is executed?
+        int time = 11;
+        int day = 4;
+        String dinner = time > 10 ? day : day-1;
+    a) 3        b) code does not compile        c) 1        d)4
+
+9. Pridict the output - 
+        int a = 2,b = 3;
+            if(a++ == 2 || b++ == 3){
+                a--;
+            }
+            if(++b == 5 && ++a == 2){
+                a++
+            }
+            else{
+                a++;
+                b--;
+            }
+            System.out.print(a);
+            System.out.print(b);
+    a)4,6       b)2,3       c)3,5       d)3,4
+
+10. What is the output of the following code ?
+        int a=12,b=15;
+        char ch ="105".charAt(1);
+        int c = a++ + --a - ++b - a++ - ++ch + ch/a;
+        System.out.println(c);
+    a)-50       b)-48       c)54        d)65
+
+11. What is the value of (5+(!2+8)*3-3%2)/2?
+    a) 2        b) 16        c) 11        d) none
+
+12. fill in the blanks:
+    A switch statement can have _______ case statement and _______ default statement
+    a)at most one,at least one                b)any number of,at most one
+    c)at least one , at most one              d)at least one , any number of
+
+13. find the output of the following program
+        public class sol{
+            public static void main(String[] args){
+                short x = 127;
+                x =+ 3;
+                System.out.print(x);
+            }
+        }
+    a) 3        b) 130        c) 127        d) code does not compile
+
