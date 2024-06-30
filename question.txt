@@ -105,3 +105,66 @@ a)1         b)2         c)3             d)6
         }
     a) 3        b) 130        c) 127        d) code does not compile
 
+14. What does the following pseudo-code do?
+        function mysteryFunction(arr, n):
+        count = 0
+        for i from 0 to length(arr)-1:
+            if arr[i] == n:
+                count = count + 1
+        return count
+    a) It finds the first occurrence of n in arr         b) It finds the last occurrence of n in arr
+    c) It counts the occurrences of n in arr          d) It checks if n is present in arr
+
+15. What will be the value of the variable result after executing the following pseudo-code?
+        function calculate(a, b):
+        if a == 0:
+            return b
+        if b == 0:
+            return a
+        return calculate(a-1, b) + calculate(a, b-1)
+        result = calculate(2, 2)
+    a) 4        b) 6        c) 8        d)10
+
+16. What is the value of (5+(!2+8)*3-3%2)/2 ?
+    a) 2        b) 16        c) 11        d) none
+
+17. predict the output of the following code snippet ?
+        int a = 2 , b = 1 , c = '2';
+        int res = a++ + c++/++b - a++ * ++b/b + c;
+        System.out.println(res);
+    a) -25      b) 70       c)75        d)none
+
+18. what will be the output of the following code ?
+    ans :- error
+
+19. predict the output :
+        byte i;
+        for(i=1:I>0:i++){
+
+        }
+        System.out.print(i);
+    a) 128        b) infinite loop        c) -128        d) code not compile
+    
+20. what will be the output of the following pseudocode for a=9,b=7 ?
+        int fun(int a , int b)
+        int set c = 2
+        b = b mod c
+        a = a mod c
+        return a + b
+        end function fun()
+    a)2     b)17        c)15        d)-5
+
+21. Which word describes a formal presentation of information?
+    (a) Report    (b) Opinion     (c) Guess   (d) Feeling                   Report
+
+22. A person skilled in negotiation is called a:
+    (a) Mediator      (b) Follower    (c) Supervisor      (d) Technician                Mediator
+
+23. A synonym for "meticulous" is:
+    (a) Careless    (b) Detailed    (c) Rough   (d) Unprofessional              Detailed
+
+24. Select the correct antonym for "diligent":
+    a) Hardworking      b) Industrious      c) Lazy     d) Persistent
+
+25.  Choose the correct preposition: She insisted ______ going to the party.
+    a) in       b) of       c) on       d) at
